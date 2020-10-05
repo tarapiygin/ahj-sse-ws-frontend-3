@@ -5,7 +5,7 @@ const domen = 'ahj-sse-ws-backend-3.herokuapp.com';
 export default class InstancesController {
   constructor() {
     this.api = new API(`http://${domen}/instances`);
-    this.url = `ws://${domen}/ws`;
+    this.url = `wss://${domen}/ws`;
   }
 
   init() {
