@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.instances_container {
+  display: flex;
+  width: 50%;
+}
+
+.instances {
+  display: flex;
+  width: 50%;
+  height: 600px;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-right: 20px;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 15px;
+}
+
+.header {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  height: 20px;
+}
+
+.worklog {
+  display: flex;
+  width: 50%;
+  height: 600px;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.worklog_list {
+  display: block;
+  height: 90%;
+  overflow: auto;
+}
+
+.create_link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.instances_list {
+  overflow: auto;
+  height: 90%;
+  width: 100%;
+}
+
+.instance {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.status_wrapper{
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.actions {
+  display: flex;
+  margin-top: 5px;
+}
+
+.log_item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.log_data {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.status_indicator {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.actions_btn {
+  display: block;
+  margin-left: 8px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.start {
+  background-image: url('../img/start.png');
+}
+
+.pause {
+  background-image: url('../img/pause.png');
+}
+
+.delete {
+  background-image: url('../img/delete.png');
+}
+
+.started {
+  background-color: green;
+}
+
+.stopped {
+  background-color: black;
+}
